@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.tile {
+  cursor: pointer;
+  border: 1px solid #999;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  background-color: #bbb;
+}
+
+.tile:active {
+  background-color: #ccc;
+}
+
+.tile.revealed {
+  background-color: #ddd;
+}
+
+.tile.mine {
+  background-color: red;
+  color: white;
+}
+
+.tile.flagged {
+  background-color: #ddd;
+  color: red;
+}
