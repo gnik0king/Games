@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.score-panel {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    gap: 2px;
+}
+
+.candy {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.candy.blue {
+    background-color: blue;
+}
+
+.candy.green {
+    background-color: green;
+}
+
+.candy.yellow {
+    background-color: yellow;
+}
+
+.candy.purple {
+    background-color: purple;
+}
+
+.candy.orange {
+    background-color: orange;
+}
